@@ -13,11 +13,6 @@ git clone https://github.com/gpakosz/.tmux.git ~/.tmux
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ./.tmux.conf.local ~
 
-# Install Python3
-sudo apt-get install -y python-dev python-pip python3-dev
-sudo apt-get install -y python3-setuptools
-sudo easy_install3 pip
-
 # Install neovim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
@@ -39,15 +34,3 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 sudo apt-get install -y silversearcher-ag
 
-
-# Install Node.js
-curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
-sudo bash n lts
-
-mkdir ~/.npm-global
-npm config set prefix '~/.npm-global'
-npm install -g n
-
-
-# Create ssh key
-ssh-keygen -t rsa
