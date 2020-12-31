@@ -2,7 +2,7 @@
 
 ## Create a new user
 ```bash
-adduser --disabled-password <your_username>
+adduser <your_username>
 usermod -aG sudo <your_username>
 su - <your_username>
 ```
